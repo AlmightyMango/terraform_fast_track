@@ -5,7 +5,7 @@ data "aws_ami" "app_ami" {
     name   = "name"
     values = ["bitnami-tomcat-*-x86_64-hvm-ebs-nami"]
   }
-  
+
 provider "aws" {
     region = "us-east-1"
 }
@@ -13,3 +13,4 @@ provider "aws" {
 resource "aws_vpc" "my_vpc"{
     cidr_block = "10.0.0.0/16"
 }
+
